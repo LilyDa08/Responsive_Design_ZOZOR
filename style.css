@@ -1,0 +1,420 @@
+/* Définition des polices personnalisées */
+
+
+
+@font-face {
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+        url('polices/ballpark.woff') format('woff'),
+        url('polices/ballpark.ttf') format('truetype'),
+        url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+        url('polices/dayrom.woff') format('woff'),
+        url('polices/dayrom.ttf') format('truetype'),
+        url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('images/fond_jaune.png');
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+    font-size: 1em;
+}
+
+#bloc_page {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+section h1,
+footer h1,
+nav a {
+    font-family: "Dayrom", serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Header */
+
+header {
+    background: url('images/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img {
+    width: 40%;
+    height: 40%;
+}
+
+header h1 {
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 0.4em;
+}
+
+header h2 {
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+/* Navigation */
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav li {
+    margin-left: 1.3em;
+}
+
+nav a {
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3%;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+/* Bannière */
+
+#banniere_image {
+    margin-top: 3%;
+    height: 25vh;
+    border-radius: 1%;
+    background: url('images/sanfrancisco.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 3%;
+}
+
+#banniere_description {
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.2%;
+    height: 13%;
+    padding-top: 1em;
+    padding-left: 0.5em;
+    background-color: rgba(24, 24, 24, 0.8);
+    color: white;
+    font-size: 0.8em;
+}
+
+.bouton_rouge {
+    height: 45%;
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.5em;
+    background: url('images/fond_degraderouge.png') repeat-x;
+    border: 1px solid #760001;
+    border-radius: 6% 6% 6% 6%;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_rouge img {
+    border: 0;
+}
+
+/* Corps */
+
+section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+article,
+aside {
+    text-align: justify;
+}
+
+article {
+    margin-right: 20px;
+    flex: 3;
+}
+
+.ico_categorie {
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
+article p {
+    font-size: 0.8em;
+}
+
+aside {
+    width: 15em;
+    position: relative;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 0.4em;
+    padding: 0.6em;
+    color: white;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+#fleche_bulle {
+    position: absolute;
+    top: 10%;
+    left: -1.3em;
+    width: 1em;
+}
+
+#photo_zozor {
+    text-align: center;
+}
+
+#photo_zozor img {
+    border: 1px solid #181818;
+    width: 50%;
+    min-width: 80px;
+    min-width: 35px;
+}
+
+aside img {
+    margin: 0.4em;
+    width: 3em;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    background: url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+    padding-top: 25px;
+}
+
+footer p,
+footer ul {
+    font-size: 0.8em;
+}
+
+footer h1 {
+    font-size: 1.1em;
+}
+
+
+#tweet {
+    width: 28%;
+}
+
+#mes_photos {
+    width: 35%;
+}
+
+#mes_amis {
+    width: 31%;
+}
+
+#mes_photos img {
+    border: 1px solid #181818;
+    margin-right: 0.2em;
+    width: 23%;
+    min-width: 40px;
+
+}
+
+#listes_amis {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+
+#mes_amis ul {
+    list-style-image: url('images/ico_liensexterne.png');
+    padding-left: 2px;
+}
+
+#mes_amis a {
+    text-decoration: none;
+    color: #760001;
+}
+
+/*-------------- RESPONSIVE --------------*/
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    /* Styles */
+    header {
+        padding: 1em 0;
+    }
+
+    nav ul {
+        display: inline-block;
+        text-align: end;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    nav a:hover {
+        color: #1579b7;
+        padding-right: 0.2em;
+        border-right: 1px solid #1579b7;
+        border-bottom: none;
+    }
+
+    #banniere_image {
+        display: none;
+    }
+
+    section {
+        display: block;
+        margin: 2em auto;
+    }
+
+    section article {
+        margin: auto;
+        font-size: 1.1em;
+        line-height: 120%;
+    }
+    section article h1 {
+        text-align: left;
+        font-size: 1em;
+    }
+    section aside {
+        margin: 2em auto;
+        text-align: center;
+    }
+
+    #icon-logo {
+        text-align: center;
+    }
+
+    footer div {
+        margin: 1em ;
+        width: 80vw;
+    }
+    footer {
+        display: block;
+    }
+    
+    footer div {
+        display: inline;
+        text-align: center;
+    }
+    
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 481px) and (max-width : 810px) {
+    /* Styles */
+    header {
+        padding: 1em 0;
+    }
+
+    nav ul {
+        display: inline-block;
+        text-align: end;
+    }
+
+    nav a {
+        font-size: 1.1em;
+    }
+
+    nav a:hover {
+        color: #1579b7;
+        padding-right: 0.2em;
+        border-right: 1px solid #1579b7;
+        border-bottom: none;
+    }
+
+    #banniere_image {
+        display: none;
+    }
+
+    section {
+        display: block;
+        margin: 2em auto;
+    }
+
+    section article {
+        margin: auto;
+        font-size: 1.1em;
+        line-height: 115%;
+    }
+
+    section aside {
+        margin: 2em auto;
+        text-align: center;
+        width: 60%;
+    }
+    
+    #photo_zozor {
+        width: 85%;
+        margin: auto;
+    }
+    
+    section aside img {
+        width: 3em;
+    }
+
+    #icon-logo {
+        text-align: center;
+    }
+    
+    footer {
+        display:block;
+
+    }
+
+    footer div {
+        margin: 1em auto;
+        min-width: 370px;
+        text-align: center;
+    }
+
+    footer div h1 {
+        text-align: center;
+    }
+}
